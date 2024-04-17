@@ -25,17 +25,35 @@ public class Library {
 
     }
 
-    public void addBook(String aAuthor, String aTitle, String ISBN) {
-        Book a = new Book(aAuthor, aTitle, ISBN);
-        this.books.add(a);
+    /**
+     * Allows the user to add a book by passing its author, title and ISBN
+     * @param aAuthor
+     * @param aTitle
+     * @param ISBN
+     */
+    public void addBook(String aAuthor, String aTitle, String ISBN) { //passing to constructor
+        Book a = new Book(aAuthor, aTitle, ISBN);  //constructor creates new object
+        this.books.add(a);  //calling a constructor look up book class
 
 
     }
 
     /**
-     * returns the numbers of books currently in the library
      *
-     * @return the number of books listed
+     *
+     * Allows the user to add a book by passing a book object
+     */
+
+
+
+    public void addBook(Book b)
+    {
+
+    }
+
+    /** returns the numbers of books currently in the library
+     *
+             * @return the number of books listed
      */
     public int getNumberOfBooks() {
 
@@ -47,9 +65,10 @@ public class Library {
     public void listAllBooks() {
         for (Book eachBook : this.books) //loop variable
         {
-            // System.out.println(eachStudent.getName()); //add the .getName to get a logical
+
             System.out.print("Author " + eachBook.getAuthor() + "  Title  " + eachBook.getTitle() + "ISBN" + eachBook.getISBN() + "\n");
-        System.out.println(eachBook);
+
+            System.out.println(eachBook);
         }
 
     }

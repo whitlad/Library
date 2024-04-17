@@ -6,6 +6,8 @@ public class Main {
         Book b = new Book("Julia Donaldson", "The Gruffalo", "9780803731097");
         Book c = new Book("J K Rowling", "Harry Potter and the Sorcerer's Stone", " 9781524721251");
 
+        **Creates the object outside the library
+
         System.out.println("*****************************");
         System.out.println(a);
         System.out.println("*****************************");
@@ -32,7 +34,13 @@ public class Main {
       l.addBook("Julia Donaldson", "The Gruffalo", "9780803731097");
       l.addBook("J K Rowling", "Harry Potter and the Sorcerer's Stone", " 9781524721251");
       l.listAllBooks();
+//passes the book into the library
 
+  UserInterface ui = new UserInterface();
+  ui.showMainMenu();
 
     }
+
+
+
 }
